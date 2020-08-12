@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtapp">
+
+    <inherits name='com.google.gwt.user.User'/>
+
+    <entry-point class='com.webapp.gwtapp.client.gwtapp'/>
+
+
+    <servlet path='/gwtappService' class='com.webapp.gwtapp.server.gwtappServiceImpl'/>
+
+</module>
