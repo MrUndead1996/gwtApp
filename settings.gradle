@@ -1,2 +1,3 @@
 rootProject.name = 'gwtApp'
+include 'model-web'
 

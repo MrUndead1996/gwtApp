@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtapp">
+
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.google.gwt.place.Place"/>
+    <inherits name="com.google.gwt.activity.Activity"/>
+    <inherits name="com.webapp.gwtapp.gwtapp"/>
+    <entry-point class='com.webapp.gwtapp.client.WebApp'/>
+
+    <servlet path='/userList' class='com.webapp.gwtapp.server.UserListImpl'/>
+    <source path="client"/>
+    <source path="model"/>
+    <source path="server"/>
+
+    <replace-with class="com.webapp.gwtapp.client.ClientFactoryImpl">
+        <when-type-is class="com.webapp.gwtapp.client.ClientFactory"/>
+    </replace-with>
+
+</module>
